@@ -12,7 +12,7 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#slide" class="link"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
                 <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
                 <li><a href="#projetos" class="link"><i class="fa-solid fa-clipboard"></i></a></li>
@@ -23,7 +23,7 @@
 
     <main>
         <section id="ficha">
-            <img src="imagens/foto-principal.jpg" alt="Gustavo Guanabara" class="foto">
+            <img src="imagens/foto-principal.jpg" alt="Jefferson Nascimento" class="foto">
             <h1>Jefferson Nascimento</h1>
             <p>Sou um estudante em Redes de Computadores, com proficiência em desenvolvimento e programação, almejando arduamente a evoluir na área de tecnologia, e em criações de soluções para problemas. </p>
             <div id="social">
@@ -33,9 +33,9 @@
             </div>
         </section>  
         <section id="detalhes">
-            <article class="video">
+            <article id="video">
                 <h2><i class="fa-solid fa-handshake"></i> Sobre mim</h2>
-                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;border-radius: 8px; will-change: transform;">
+                <div id="slide" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;padding-bottom: 0;  margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;border-radius: 8px; will-change: transform;">
                     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"src="https://www.canva.com/design/DAHC7N6zTfM/k8UUZCIfsvgwr5hyqrI5Dg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
                     </iframe>
                 </div>
@@ -45,59 +45,80 @@
                 <h2><i class="fa-solid fa-screwdriver-wrench"></i> Minhas skills</h2>
 
                 <div id="skill-container">
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                               <i class="fa-solid fa-code"></i> HTML5
-                            </span>
-                            <span class="porcent">
-                                90%
-                            </span>
+                    <div class="hard-skills">
+                        <h2>Hard skills</h2>
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                   <i class="fa-solid fa-code"></i> HTML5
+                                </span>
+                                <span class="porcent">
+                                    90%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progresso" style="width: 90%;"></div>
+                            </div>
                         </div>
-                        <div class="barra">
-                            <div class="progresso" style="width: 90%;"></div>
+
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i> CSS3
+                                </span>
+                                <span class="porcent">
+                                    80%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progresso" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i> JavaScript
+                                </span>
+                                <span class="porcent">
+                                    75%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progresso" style="width: 75%;"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                               <i class="fa-solid fa-code"></i> CSS3
-                            </span>
-                            <span class="porcent">
-                                80%
-                            </span>
+                    
+                    <div class="soft-skills">
+                        <h2>Soft skills</h2>
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                   <i class="fa-solid fa-person-rays"></i> comunicação
+                                </span>
+                                <span class="porcent">
+                                    100%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progresso" style="width: 100%;"></div>
+                            </div>
                         </div>
-                        <div class="barra">
-                            <div class="progresso" style="width: 80%;"></div>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                               <i class="fa-solid fa-code"></i> JavaScript
-                            </span>
-                            <span class="porcent">
-                                75%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progresso" style="width: 75%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                               <i class="fa-solid fa-person-rays"></i> comunicação
-                            </span>
-                            <span class="porcent">
-                                100%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progresso" style="width: 100%;"></div>
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-person-rays"></i> criatividade
+                                </span>
+                                <span class="porcent">
+                                    55%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progresso" style="width: 55%;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,10 +170,10 @@
                         <div class="projeto-info">
                             <p class="periodo">2022</p>
                             <h3 class="titulo">Projeto de Vídeos</h3>
-                            <p>Projeto construído para treinar a inserção de vídeos em nosso site.</p>
+                            <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
                             <details class="descricao">
                                 <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae veritatis praesentium quaerat ad ipsum dicta tempora, nulla cupiditate ex consectetur architecto, qui asperiores at labore libero hic voluptatum dolor!</p>
+                                <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do Curso em Vídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
                             </details>
                         </div>
                     </div>
@@ -162,10 +183,10 @@
                         <div class="projeto-info">
                             <p class="periodo">2023</p>
                             <h3 class="titulo">Projeto Cordel</h3>
-                            <p>Projeto construído para treinar efeito paralax em imagens.</p>
+                            <p>Projeto construído para treinar efeito parallax em imagens e a aprensentação de conteúdo em diversos tamanhos de tela.</p>
                             <details class="descricao">
                                 <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae veritatis praesentium quaerat ad ipsum dicta tempora, nulla cupiditate ex consectetur architecto, qui asperiores at labore libero hic voluptatum dolor!</p>
+                                <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem - humorada, responsiva e usando técnicas como parallax  para exibição de imagens de fundo.</p>
                             </details>
                         </div>
                     </div>
@@ -175,10 +196,10 @@
                         <div class="projeto-info">
                             <p class="periodo">2022</p>
                             <h3 class="titulo">Projeto Android</h3>
-                            <p>Projeto construído para treinar conteúdos e imagens dinâmicas.</p>
+                            <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
                             <details class="descricao">
                                 <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae veritatis praesentium quaerat ad ipsum dicta tempora, nulla cupiditate ex consectetur architecto, qui asperiores at labore libero hic voluptatum dolor!</p>
+                                <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
                             </details>
                         </div>
                     </div>
@@ -188,10 +209,10 @@
                         <div class="projeto-info">
                             <p class="periodo">2022</p>
                             <h3 class="titulo">Projeto de Redes sociais</h3>
-                            <p>Projeto construído para treinar a inserção de vídeos em nosso site.</p>
+                            <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
                             <details class="descricao">
                                 <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae veritatis praesentium quaerat ad ipsum dicta tempora, nulla cupiditate ex consectetur architecto, qui asperiores at labore libero hic voluptatum dolor!</p>
+                                <p>Um meta projeto muito interessante que deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado  a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
                             </details>
                         </div>
                     </div>
@@ -200,11 +221,11 @@
                         <img class="foto" src="imagens/projeto-05-login.jpg" alt="Projeto 5">
                         <div class="projeto-info">
                             <p class="periodo">2022</p>
-                            <h3 class="titulo">Projeto de Tela de login</h3>
-                            <p>Projeto construído para treinar a inserção de vídeos em nosso site.</p>
+                            <h3 class="titulo">Projeto Login</h3>
+                            <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
                             <details class="descricao">
                                 <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae veritatis praesentium quaerat ad ipsum dicta tempora, nulla cupiditate ex consectetur architecto, qui asperiores at labore libero hic voluptatum dolor!</p>
+                                <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
                             </details>
                         </div>
                     </div>

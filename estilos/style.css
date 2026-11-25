@@ -90,6 +90,7 @@ section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: left bottom;
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
@@ -129,6 +130,10 @@ section#detalhes {
   grid-column: 2;
 }
 
+#slide {
+  box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+}
+
 article {
   background-color: var(--fundo-card);
   padding: 20px;
@@ -139,13 +144,33 @@ article {
 
 article h2 {
   color: var(--destaque);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #skill-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+}
+
+
+
+.hard-skills  h2{
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.soft-skills h2 {
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+#skill-container .item {
+  padding: 10px;
 }
 
 #skill-container .info {
@@ -276,7 +301,16 @@ footer span {
     grid-column: 3 / 4;
   }
 
+  #slide {
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+  }
+
   #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #formacao-container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
