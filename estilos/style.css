@@ -31,6 +31,14 @@
   --destaque: #0f766e;
   --destaque-inverso: #1e3a5f;
   --fundo-card: #ffffff;
+
+  --azul-marinho: #172554;
+  --azul-petroleo: #16465b;
+  --verde-petroleo: #115e59;
+  --fundo-hover: #0f766e;
+  --destaque-top: #99f6e4;
+
+  --gradiente: linear-gradient(135deg, var(--azul-marinho), var(--azul-petroleo), var(--verde-petroleo))
 }
 
 body.escuro {
