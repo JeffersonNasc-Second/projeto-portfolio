@@ -1,11 +1,21 @@
 /* 
+  Claro
   Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
+  --fundo-principal #f5f5f5f5
+  --texto #222222
+  --texto-inverso #ffffff
+  --destaque #0077ff
+  --destaque-inverso #66bbff
+  --fundo-card #ffffff
+
+  Escuro
+  Variáveis para cores:
+  --fundo-principal #222222
+  --texto #e0e0e0
+  --texto-inverso  #333333
+  --destaque #ff5522
+  --destaque-inverso #a73917
+  --fundo-card #444444
 */
 
 * {
@@ -15,21 +25,21 @@
 }
 
 :root {
-  --fundo-principal: #f5f5f5f5;
-  --texto: #222222;
+  --fundo-principal: #f1f5f7;
+  --texto: #14243d;
   --texto-inverso: #ffffff;
-  --destaque: #0077ff;
-  --destaque-inverso: #66bbff;
+  --destaque: #0f766e;
+  --destaque-inverso: #1e3a5f;
   --fundo-card: #ffffff;
 }
 
 body.escuro {
-  --fundo-principal: #222222;
-  --texto: #e0e0e0;
-  --texto-inverso: #333333;
-  --destaque: #ff5522;
-  --destaque-inverso: #a73917;
-  --fundo-card: #444444;
+  --fundo-principal: #101c2c;
+  --texto: #e5edf4;
+  --texto-inverso: #ffffff;
+  --destaque: #6ccfc2;
+  --destaque-inverso: #93b4e8;
+  --fundo-card: #18283a;
 }
 
 body {
