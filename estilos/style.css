@@ -32,13 +32,20 @@
   --destaque-inverso: #1e3a5f;
   --fundo-card: #ffffff;
 
+  /* Cores complementares */
+
   --azul-marinho: #172554;
   --azul-petroleo: #16465b;
   --verde-petroleo: #115e59;
   --fundo-hover: #0f766e;
-  --destaque-top: #99f6e4;
+  --destaque-topo: #99f6e4;
 
-  --gradiente: linear-gradient(135deg, var(--azul-marinho), var(--azul-petroleo), var(--verde-petroleo))
+  --gradiente: linear-gradient(135deg, var(--azul-marinho), var(--azul-petroleo), var(--verde-petroleo));
+
+  /* Fontes */
+
+  --fonte-principal: 'Inter', Arial, sans-serif;
+  --fonte-titulo: 'Manrope', Arial, sans-serif;
 }
 
 body.escuro {
@@ -48,19 +55,51 @@ body.escuro {
   --destaque: #6ccfc2;
   --destaque-inverso: #93b4e8;
   --fundo-card: #18283a;
+
+  /* Cores complementares */
+
+  --azul-marinho: #14243d;
+  --azul-petroleo: #16465b;
+  --verde-petroleo: #164e4a;
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fonte-principal);
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
   transition: background-color 0.5s, color 0.5s;
 }
 
+h1, h2 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+p {
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.periodo {
+  font-weight: 500;
+}
+
+body.escuro #skill-container .progresso {
+  background: linear-gradient(90deg, var(--destaque-inverso), var(--destaque)); 
+}
+
 header {
-  background-color: var(--destaque);
-  color: var(--texto);
+  background: var(--gradiente);
+  color: var(--texto-inverso);
   padding: 10px;
   display: flex;
   justify-content: flex-end;
@@ -86,8 +125,8 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-  background-color: var(--destaque-inverso);
-  color: var(--destaque);
+  background-color: var(--fundo-hover);
+  color: var(--texto-inverso);
 }
 
 main {
@@ -174,14 +213,16 @@ article h2 {
 
 
 .hard-skills  h2{
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
   font-size: 1.1em;
   margin: 0px;
   padding-bottom: 5px;
 }
 
 .soft-skills h2 {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
   font-size: 1.1em;
   margin: 0px;
   padding-bottom: 5px;
@@ -198,7 +239,7 @@ article h2 {
 }
 
 #skill-container .nome {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--texto);
 }
 
@@ -216,8 +257,13 @@ article h2 {
 
 #skill-container  .progresso {
   height: 100%;
-  background-color: var(--destaque-inverso);
+  background: var(--gradiente);
   border-radius: 4px;
+}
+
+#skill-container .porcent {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 #formacao-container {
@@ -281,8 +327,15 @@ article h2 {
   border-radius: 8px;
 }
 
+summary {
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  color: var(--destaque);
+}
+
 footer {
-  background-color: var(--destaque);
+  font-family: var(--fonte-principal);
+  background: var(--gradiente);
   color: var(--texto-inverso);
   padding: 15px;
   text-align: center;
@@ -295,7 +348,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--destaque-inverso);
+  color: var(--destaque-topo);
 }
 
 footer span {
