@@ -63,6 +63,10 @@ body.escuro {
   --verde-petroleo: #164e4a;
 }
 
+body.escuro .qrcode {
+  border: 4px double var(--destaque-topo);
+}
+
 body {
   font-family: var(--fonte-principal);
   line-height: 1.5em;
@@ -162,6 +166,19 @@ section#ficha h1 {
   margin: 15px 0;
   font-size: 1.5em;
   text-align: left;
+}
+
+div#social .qrcode {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  border: 4px double var(--azul-marinho);
+}
+
+div#social .qrcode:hover {
+  height: 90px;
+  width: 90px;
+  transition: .8s linear;
 }
 
 div#social {
