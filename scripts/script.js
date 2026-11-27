@@ -16,14 +16,16 @@ function temaEscuro(tipo) {
   }
 }
 
-botao.addEventListener('click', () => {
+botao.addEventListener('click', (e) => {
+  e.preventDefault();
+
   const isescuro = body.classList.toggle('escuro');
   temaEscuro(isescuro);
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
 // Scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a.link');
+const navLinks = document.querySelectorAll('#menu ul a.link:not(#botao-tema)');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
