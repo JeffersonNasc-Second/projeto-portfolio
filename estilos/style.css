@@ -67,7 +67,7 @@ body.escuro {
   --gradiente: linear-gradient(135deg, var(--azul-marinho), var(--azul-petroleo), var(--verde-petroleo));
 }
 
-body.escuro div#social .qrcode {
+body.escuro div#conexao .qrcode {
   border: 4px double var(--destaque-topo);
 }
 
@@ -124,6 +124,11 @@ nav#menu ul {
 }
 
 nav#menu a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   text-decoration: none;
    color: var(--texto-inverso);
    font-weight: 600;
@@ -172,19 +177,7 @@ section#ficha h1 {
   text-align: left;
 }
 
-div#social .qrcode {
-  height: 50px;
-  width: 50px;
-  border-radius: 8px;
-  border: 4px double var(--azul-marinho);
-  transition: 0.8s ease;
-}
 
-div#social .qrcode:hover {
-  height: 90px;
-  width: 90px;
-  transform: scale(1.0);
-}
 
 div#social {
   display: flex;
@@ -199,6 +192,43 @@ div#social a {
   color: var(--destaque);
   transition: color 0.5s;
 
+}
+
+div#conexao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+  border-top: 1px solid var(--destaque-inverso);
+  text-align: center;
+}
+
+
+
+div#conexao .qrcode {
+  background-color: #ffffff;
+  height: auto;
+  width: 90px;
+  max-width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 4px double var(--azul-marinho);
+  transition: border-color 0.3s ease, 0.8s ease;
+}
+
+div#conexao p {
+  font-size: 0.8em;
+}
+
+div#conexao .qrcode:hover {
+  height: auto;
+  width: 140px;
+  transform: scale(1.0);
+}
+
+div#conexao h3 {
+  padding-top: 5px;
 }
  
 div#social a:hover {
